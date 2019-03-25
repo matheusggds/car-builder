@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item {
+    border-radius: 100%;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border: solid 10px #ccc;
+    transition: transform .2s ease, border-color .2s ease;;
+
+    &:hover {
+        border-color: $gray;
+        border-width: 8;
+        transform: scale(1.2);
+    }
+}
